@@ -21,6 +21,8 @@ public:
         START = NULL;
     }
 
+    void addNode() 
+    {
     int nim;
     cout << "\nEnter the roll number of the student: ";
     cin >> nim;
@@ -30,3 +32,13 @@ public:
 
     //step 2: Assign value to the data fields
     newNode->noMhs = nim;
+
+    //step 3: Insert at beginning if list is empty or nim is smallest
+    if (START == NULL || nim < START->noMhs) 
+    {
+       if (START != NULL && nim == START->noMhs) 
+       {
+           cout << "\nDuplicate roll numbers are not allowed." << endl;
+           return;
+       }
+    }
