@@ -41,4 +41,6 @@ public:
            cout << "\nDuplicate roll numbers are not allowed." << endl;
            return;
        }
+       //Step 4: newNode->next = START;
+         newNode->next = START;
     }
