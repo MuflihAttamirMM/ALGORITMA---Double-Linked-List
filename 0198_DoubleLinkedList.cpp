@@ -13,10 +13,10 @@ public:
 
 class DoubleLinkedList 
 {
-private:
+    private:
     Node *START;
 
-public:
+    public:
     DoubleLinkedList() 
     {
         START = NULL;
@@ -209,6 +209,7 @@ public:
         {
             cout << "Record found\n";
             cout << "Roll Number: " << current->noMhs << endl;
+        }
     }
 };
 
