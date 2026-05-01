@@ -47,4 +47,7 @@ public:
        //Step 5: START.prev = newNode (if START exists)
          if (START != NULL) 
              START->prev = newNode;
+
+       //Step 6 newNode->prev = NULL;
+         newNode->prev = NULL;
     }
